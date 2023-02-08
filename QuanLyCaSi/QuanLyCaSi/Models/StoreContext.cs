@@ -107,5 +107,47 @@ namespace QuanLyCaSi.Models
                 return (cmd.ExecuteNonQuery());
             }
         }
+
+        public int InsertAlbum (Album al)
+        {
+            using(MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var str = "insert into Album (MaAlbum, TenAlbum, MaCaSi) " +
+                    "value (@maAB, @tenAB, @maCS)";
+                MySqlCommand cmd = new MySqlCommand(str, conn);
+                cmd.Parameters.AddWithValue("maAB", al.MaAlbum);
+                cmd.Parameters.AddWithValue("tenAB", al.TenAlbum);
+                cmd.Parameters.AddWithValue("maCS", al.MaCaSi);
+                return(cmd.ExecuteNonQuery());
+            }
+        }
+
+        public List<BaiHat> getBaiHats()
+        {
+            List<BaiHat> list = new List<BaiHat>();
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var str = "select *from BaiHat";
+                MySqlCommand cmd = new MySqlCommand(str,conn);
+                using(var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new BaiHat()
+                        {
+                            MaBaiHat = reader.GetString(0),
+                            TenBaiHat= reader.GetString(1),
+                            TheLoai = reader.GetString(2),
+                            MaAlbum = reader.GetString(3),
+                        });
+                    }
+                    reader.Close();
+                }
+                conn.Close();
+            }
+            return list;
+        }
     }
 }

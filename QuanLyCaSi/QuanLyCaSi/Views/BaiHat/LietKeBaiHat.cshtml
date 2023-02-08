@@ -1,0 +1,14 @@
+﻿@model IEnumerable<QuanLyCaSi.Models.BaiHat>
+@{
+    ViewData["Title"] = "Liet ke ten bai hat";
+}
+
+<form action="/BaiHat/DeleteBaiHat" method="post">
+    <select name="MaBaiHat">
+        @foreach (var item in Model)
+        {
+            <option value="@item.MaBaiHat">@item.MaBaiHat</option>
+        }
+    </select>
+    <input type="submit" name="Xoa"></input>
+</form>

@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\IS220_FRAMEWORK_CK\QuanLyCaSi\QuanLyCaSi
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/Album/EnterAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cRW50ZXJBbGJ1bS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/Album/InsertAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cSW5zZXJ0QWxidW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/BaiHat/LietKeBaiHat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XExpZXRLZUJhaUhhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/CaSi/EnterCaSi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxFbnRlckNhU2kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
