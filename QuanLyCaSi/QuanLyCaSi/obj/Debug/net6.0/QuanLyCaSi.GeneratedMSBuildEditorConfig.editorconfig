@@ -16,6 +16,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\IS220_FRAMEWORK_CK\QuanLyCaSi\QuanLyCaSi
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/CaSi/EnterCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxFbnRlckNhU2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/CaSi/InsertCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxJbnNlcnRDYVNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/CaSi/LietKeCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxMaWV0S2VDYVNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/CaSi/UpdateCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxVcGRhdGVDYVNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/CaSi/ViewCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxWaWV3Q2FTaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/CaSi/XoaCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxYb2FDYVNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

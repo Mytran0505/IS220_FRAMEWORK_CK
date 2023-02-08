@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Insert Ca Si";
+}
+
+@model CaSi;
+
+<h2>Them Ca Si</h2>
+
+<form action="/CaSi/InsertCaSi" method="post">
+    <label>Ma Ca Si</label>
+    <input type ="maCaSi" name="MaCaSi"></input></br>
+    <label>Ten Ca Si</label>
+    <input type="tenCaSi" name="TenCaSi"></input></br>
+    <label>Ngay Sinh</label>
+    <input type="date" name="NgaySinh"></input></br>
+    <input type="submit" name="submit"></input>
+</form>
