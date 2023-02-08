@@ -149,5 +149,98 @@ namespace QuanLyCaSi.Models
             }
             return list;
         }
+
+        public int DeleteBaiHat (string id)
+        {
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var str = "delete from BaiHat where MaBaiHat = @maBaiHat";
+                MySqlCommand cmd = new MySqlCommand(str,conn);  
+                cmd.Parameters.AddWithValue("maBaiHat", id);
+                return (cmd.ExecuteNonQuery());
+            }
+        }
+
+        public int TimBaiHatTheoTen (string st)
+        {
+            int i = 0;
+            using(MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var str = "select * from BaiHat where TenBaiHat =@tenBH";
+                MySqlCommand cmd = new MySqlCommand(str,conn);
+                cmd.Parameters.AddWithValue("tenBH", st);
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read()) { i++; }
+                    reader.Close();
+                }
+                conn.Close();
+            }
+            return i;
+        }
+
+        public List<BaiHat> LietKeNBaiHat(int num)
+        {
+            List<BaiHat> list = new List<BaiHat>();
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var str = "select * from BaiHat limit @number";
+                MySqlCommand cmd = new MySqlCommand(str, conn);
+                cmd.Parameters.AddWithValue("number", num);
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new BaiHat()
+                        {
+                            MaBaiHat = reader.GetString(0),
+                            TenBaiHat = reader.GetString(1),
+                            TheLoai = reader.GetString(2),
+                            MaAlbum = reader.GetString(3),
+                        });
+                    }
+                    reader.Close();
+                }
+                conn.Close();
+            }
+            return list;
+        }
+
+        public List<Album> AlbumCoNhieuBaiHatNhat()
+        {
+            List<Album> list = new List<Album>();
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var str = "select AB.MaAlbum, AB.TenAlbum, count(MaBaiHat) " +
+                    "from Album AB, BaiHat BH " +
+                    "where AB.MaAlbum = BH.MaAlbum " +
+                    "GROUP by AB.MaAlbum, AB.TenAlbum " +
+                    "having count(MaBaiHat) = " +
+                    "(select count(MaBaiHat) " +
+                    "from BaiHat " +
+                    "GROUP by MaAlBum " +
+                    "limit 1);";
+                MySqlCommand cmd = new MySqlCommand(str, conn);
+                using(var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new Album()
+                        {
+                            MaAlbum = reader.GetString(0),
+                            TenAlbum = reader.GetString(1),
+                            MaCaSi = reader.GetString(2),
+                        });
+                    }
+                    reader.Close();
+                }
+                conn.Close();
+            }
+            return list;
+        }
     }
 }

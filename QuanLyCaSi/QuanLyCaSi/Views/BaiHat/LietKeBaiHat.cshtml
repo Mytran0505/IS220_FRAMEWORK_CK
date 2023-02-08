@@ -3,12 +3,12 @@
     ViewData["Title"] = "Liet ke ten bai hat";
 }
 
-<form action="/BaiHat/DeleteBaiHat" method="post">
+<form action="DeleteBaiHat" method="post">
     <select name="MaBaiHat">
         @foreach (var item in Model)
         {
-            <option value="@item.MaBaiHat">@item.MaBaiHat</option>
+            <option value="@item.MaBaiHat">@item.TenBaiHat</option>
         }
     </select>
-    <input type="submit" name="Xoa"></input>
+    <input type="submit" name="submit" value="Xoa"></input>
 </form>

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<QuanLyCaSi.Models.Album>
+@{
+    ViewData["Title"] = "Danh sach album co nhieu bai hat nhat";
+}
+<h2>Danh sach album co nhieu bai hat nhat</h2>
+<table>
+    <tr>
+        <th>Ma Album</th>
+        <th>Ten Album</th>
+        <th>Ma Ca Si</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MaAlbum</td>
+            <td>@item.TenAlbum</td>
+            <td>@item.MaCaSi</td>
+        </tr>
+    }
+</table>
