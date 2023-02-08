@@ -1,0 +1,16 @@
+﻿@model IEnumerable<QuanLyCaSi.Models.Album>
+@{
+    ViewData["Title"] = "Liet ke album";
+}
+
+<h2>Danh sach các album</h2>
+<form action="/BaiHat/LietKeCacBaiHatCoTrongAlbum" method="post">
+    <lable>Ten Album</lable>
+    <select name="MaAlbum">
+        @foreach (var item in Model)
+        {
+            <option value ="@item.MaAlbum">@item.TenAlbum</option>
+        }
+    </select></br>
+    <input type="submit" name="submit" value="Liet Ke"></input>
+</form>

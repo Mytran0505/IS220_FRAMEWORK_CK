@@ -47,5 +47,11 @@ namespace QuanLyCaSi.Controllers
             StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi.Models.StoreContext)) as StoreContext;
             return View(context.LietKeNBaiHat(num));
         }
+
+        public IActionResult LietKeCacBaiHatCoTrongAlbum(Album al)
+        {
+            StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi.Models.StoreContext)) as StoreContext;
+            return View(context.LietKeCacBaiHatCoTrongAlbum(al.MaAlbum));
+        }
     }
 }

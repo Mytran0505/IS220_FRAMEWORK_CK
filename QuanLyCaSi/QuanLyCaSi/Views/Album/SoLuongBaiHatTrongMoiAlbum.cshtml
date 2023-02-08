@@ -1,0 +1,22 @@
+﻿@model List<object>
+@{
+    ViewData["Title"] = "Liệt số bai hat trong album";
+}
+
+<h2>Số sinh viên trong bộ môn</h2>
+<table border="1">
+    <tr>
+        <th>Ma Album</th>
+        <th>Ten Album</th>
+        <th>So luong bai hat</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.GetType().GetProperty("MaAlbum").GetValue(item, null)</td>
+            <td>@item.GetType().GetProperty("TenAlbum").GetValue(item, null)</td>
+            <td>@item.GetType().GetProperty("SoluongBaiHat").GetValue(item, null)</td>
+        </tr>
+    }
+</table>

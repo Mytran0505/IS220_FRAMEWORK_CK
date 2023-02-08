@@ -23,5 +23,17 @@ namespace QuanLyCaSi.Controllers
             StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi.Models.StoreContext)) as StoreContext;
             return View(context.AlbumCoNhieuBaiHatNhat());  
         }
+
+        public IActionResult LietKeAlbum()
+        {
+            StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi.Models.StoreContext)) as StoreContext;
+            return View(context.LietKeAlbum());
+        }
+
+        public IActionResult SoLuongBaiHatTrongMoiAlbum()
+        {
+            StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi.Models.StoreContext)) as StoreContext;
+            return View(context.SoLuongBaiHatTrongMoiAlbum());
+        }
     }
 }

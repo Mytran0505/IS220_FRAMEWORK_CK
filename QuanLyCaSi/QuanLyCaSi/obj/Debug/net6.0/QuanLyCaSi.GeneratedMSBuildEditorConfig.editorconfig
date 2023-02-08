@@ -28,6 +28,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cSW5zZXJ0QWxidW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/Album/LietKeAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cTGlldEtlQWxidW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/Album/SoLuongBaiHatTrongMoiAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cU29MdW9uZ0JhaUhhdFRyb25nTW9pQWxidW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/BaiHat/DeleteBaiHat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XERlbGV0ZUJhaUhhdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/BaiHat/LietKeCacBaiHat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XExpZXRLZUNhY0JhaUhhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/BaiHat/LietKeCacBaiHatCoTrongAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XExpZXRLZUNhY0JhaUhhdENvVHJvbmdBbGJ1bS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/IS220_FRAMEWORK_CK/QuanLyCaSi/QuanLyCaSi/Views/BaiHat/LietKeNBaiHat.cshtml]

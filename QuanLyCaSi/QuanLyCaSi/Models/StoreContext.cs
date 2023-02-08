@@ -242,5 +242,86 @@ namespace QuanLyCaSi.Models
             }
             return list;
         }
+        public List<Album> LietKeAlbum()
+        {
+            List<Album> list = new List<Album>();
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var str = "Select *from Album";
+                MySqlCommand cmd = new MySqlCommand(str, conn);
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new Album()
+                        {
+                            MaAlbum = reader.GetString(0),
+                            TenAlbum = reader.GetString(1),
+                            MaCaSi = reader.GetString(2),
+                        });
+                    }
+                    reader.Close();
+                }
+                conn.Close();
+            }
+            return list;
+        }
+        public List<BaiHat> LietKeCacBaiHatCoTrongAlbum(string id)
+        {
+            List<BaiHat> list = new List<BaiHat>();
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var str = "Select *from BaiHat where MaAlbum = @maAB";
+                MySqlCommand cmd = new MySqlCommand(str, conn);
+                cmd.Parameters.AddWithValue("maAB", id);
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new BaiHat()
+                        {
+                            MaBaiHat = reader.GetString(0),
+                            TenBaiHat = reader.GetString(1),
+                            TheLoai = reader.GetString(2),
+                        });
+                    }
+                    reader.Close();
+                }
+                conn.Close();
+            }
+            return list;
+        }
+
+        public List<object> SoLuongBaiHatTrongMoiAlbum()
+        {
+            List<object> list = new List<object>();
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var str = "select AB.MaAlbum, AB.TenAlbum, count(BH.MaBaiHat) " +
+                    "from Album AB left join BaiHat BH " +
+                    "ON AB.MaAlbum = BH.MaAlbum " +
+                    "Group by AB.MaAlbum ";
+                MySqlCommand cmd = new MySqlCommand(str, conn);
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var ob = new
+                        {
+                            MaAlbum = reader.GetString(0),
+                            TenAlbum = reader.GetString(1),
+                            SoluongBaiHat = Convert.ToInt32(reader.GetString(2)),
+                        };
+                        list.Add(ob);
+                    }
+                    reader.Close();
+                }
+                conn.Close();
+            }
+            return list;
+        }
     }
 }
