@@ -1,0 +1,21 @@
+﻿@model IEnumerable<QuanLyCaSi_XLAJAX.Models.BaiHat>
+@{
+    ViewData["Title"] = "Ket qua liet ke N bai hat";
+}
+<h2>Danh sach cac bai hat</h2>
+<table border="1">
+    <tr>
+        <th>Ma Bai Hat</th>
+        <th>Ten Bai Hat</th>
+        <th>The Loai</th>
+    </tr>
+    @foreach (var item in Model){
+        <tr>
+            <td>@item.MaBaiHat</td>
+            <td>@item.TenBaiHat</td>
+            <td>@item.TheLoai</td>
+        </tr>
+    }
+</table>
+
+

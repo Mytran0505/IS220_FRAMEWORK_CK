@@ -1,0 +1,30 @@
+﻿@model IEnumerable<QuanLyCaSi_XLAJAX.Models.Album>
+@{    ViewData["Title"] = "Liet ke album";}
+<head>
+    <script>$(document).ready(function () {
+            $(".classAlbum").change(function () {
+                var maAlbum = $(this).val();
+
+                $.ajax({
+                    type: 'GET',
+                    url: '/BaiHat/LietKeCacBaiHatCoTrongAlbum/' + maAlbum,
+                    success: function (result) {
+                        $('.dsbh').html(result);
+                    }
+                });
+            });
+        });</script>
+</head>
+@{
+    <h2>Danh sach các album</h2>
+    <form action="" method="get">
+        <label >Danh sách các album</label>
+        <select name="MaAlbum"class="classAlbum">
+            @foreach (var item in Model) 
+            { 
+              <option value="@item.MaAlbum">@item.TenAlbum</option>
+            }
+            </select><br>
+    </form>
+    <div class="dsbh"></div>
+}

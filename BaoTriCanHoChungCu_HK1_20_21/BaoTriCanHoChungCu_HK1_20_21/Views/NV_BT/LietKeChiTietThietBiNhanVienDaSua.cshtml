@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+@model IEnumerable<BaoTriCanHoChungCu_HK1_20_21.Models.NV_BT>
+<h2>Danh sach cac thiet cua nhan vien duoc chon sua</h2>
+<table border="1">
+    <tr>
+        <th>Ma Thiet Bi</th>
+        <th>Ma Can Ho</th>    
+        <th>Lan Thu</th>
+        <th>NgayBaoTri</th>
+        <th>Chuc Nang</th>
+    </tr>
+    @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.MaThietBi</td>
+                <td>@item.MaCanHo</td>
+                <td>@item.LanThu</td>
+                <td>@item.NgayBaoTri</td>
+                <td>
+                <a href="/NV_BT/XoaChiTietSuaThietbiCuaNhanVien?MaNhanVien=@item.MaNhanVien&MaThietBi=@item.MaThietBi">Xoa</a>
+                <a href="/NV_BT/ViewChiTietThietBi?MaNhanVien=@item.MaNhanVien&MaThietBi=@item.MaThietBi&MaCanHo=@item.MaCanHo&LanThu=@item.LanThu">View</a>
+                </td>
+            </tr>
+        }
+</table>

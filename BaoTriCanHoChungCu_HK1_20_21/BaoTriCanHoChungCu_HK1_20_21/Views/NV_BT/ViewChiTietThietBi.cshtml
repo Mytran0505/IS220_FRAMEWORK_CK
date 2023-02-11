@@ -1,0 +1,17 @@
+﻿@model NV_BT
+<form action="UpdateNV_BT" method="post">
+    <input type="hidden" name="MaNV" value="@Model.MaNhanVien"></input>
+    <input type="hidden" name="MaTB" value="@Model.MaThietBi"></input>
+    <input type="hidden" name="MaCH" value="@Model.MaCanHo"></input>
+    <input type="hidden" name="LT" value="@Model.LanThu"></input>
+
+    <label>Mã Thiet Bi</label>
+    <input tyte="text" name="MaThietBi" value="@Model.MaThietBi"></input></br>
+    <label>Mã Căn Hộ</label>
+    <input type="text" name="MaCanHo" value="@Model.MaCanHo"></input></br>
+    <label>Lần Sửa</label>
+    <input type="text" name="LanThu" value="@Model.LanThu"></input></br>
+    <label>Ngày Sửa</label>
+    <input type="datetime" name="NgayBaoTri" value="@Model.NgayBaoTri"></input></br>
+    <input type="submit" name="submit" value="Update"></input>
+</form>

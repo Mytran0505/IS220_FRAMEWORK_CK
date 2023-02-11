@@ -1,0 +1,69 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BaoTriCanHoChungCu_HK1_20_21
+build_property.RootNamespace = BaoTriCanHoChungCu_HK1_20_21
+build_property.ProjectDir = D:\IS220_FRAMEWORK_CK\BaoTriCanHoChungCu_HK1_20_21\BaoTriCanHoChungCu_HK1_20_21\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\IS220_FRAMEWORK_CK\BaoTriCanHoChungCu_HK1_20_21\BaoTriCanHoChungCu_HK1_20_21
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/CanHo/NhapCanHo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9cTmhhcENhbkhvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/NhanVien/CacNhanVienCoNLanSua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cQ2FjTmhhblZpZW5Db05MYW5TdWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/NhanVien/LietKeNhanVien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cTGlldEtlTmhhblZpZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/NhanVien/LietKeNhanVienCoNLanSua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cTGlldEtlTmhhblZpZW5Db05MYW5TdWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/NV_BT/LietKeChiTietThietBiNhanVienDaSua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTlZfQlRcTGlldEtlQ2hpVGlldFRoaWV0QmlOaGFuVmllbkRhU3VhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/NV_BT/ViewChiTietThietBi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTlZfQlRcVmlld0NoaVRpZXRUaGlldEJpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/BaoTriCanHoChungCu_HK1_20_21/BaoTriCanHoChungCu_HK1_20_21/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-l7epc1b7zg

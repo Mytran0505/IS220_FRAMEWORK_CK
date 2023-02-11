@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Update Ca Si";
+}
+
+@model CaSi
+
+@{
+    <h2>Update Ca Si</h2>
+    <form action="/CaSi/UpdateCaSi" method="post">
+        <label for="maCaSi">Mã ca si</label> 
+        <input type="text" name="MaCaSi" value="@Model.MaCaSi"/><br>
+        <label for="tenCaSi">Tên ca sĩ</label> 
+        <input type="text" name="TenCaSi" value="@Model.TenCaSi"/><br>
+        <label for="ngaySinh">Ngay sinh</label>
+        <input type="datetime" name="NgaySinh" value="@Model.Ngaysinh" /><br>
+        <input type="submit" name="submit" value="Update" />
+
+    </form>
+}
+@*<label for="maCaSi">Mã Ca Sĩ</label> 
+<input type ="text" name=" ="MaCaSi" value ="@Model.MaCaSi"></input></br>
+<label for= "tenCaSi">Tên Ca Sĩ</label>
+<input type ="text" name="TenCaSi" value ="@Model.TenCaSi"></input></br>
+<label for="ngaysinh">Ngày Sinh</label>
+<input type ="date" name="NgaySinh" value="@Model.Ngaysinh"></input></br>
+<input type="submit" name="submit" value="Update"></input>*@

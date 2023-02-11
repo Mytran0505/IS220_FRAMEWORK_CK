@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BaoTriCanHoChungCu_HK1_20_21.props" />
+</Project>

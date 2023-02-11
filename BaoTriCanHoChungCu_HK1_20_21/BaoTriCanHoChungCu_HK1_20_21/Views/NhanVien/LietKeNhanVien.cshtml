@@ -1,0 +1,37 @@
+﻿@*@model IEnumerable<BaoTriCanHoChungCu_HK1_20_21.Models.NhanVien>
+<form action="/NV_BT/LietKeChiTietThietBiNhanVienDaSua">
+    <label>Ten Nhan Vien</label>
+    <select name="MaNhanVien">
+        @foreach (var item in Model)
+        {
+            <option value="@item.MaNhanVien">@item.TenNhanVien</option>
+        }
+    </select></br>
+    <input type="submit" name="submit" value="Liet Ke"></input>
+</form>*@
+
+@model IEnumerable<BaoTriCanHoChungCu_HK1_20_21.Models.NhanVien>
+    <label>Ten Nhan Vien</label>
+    <select id="MaNhanVien" name="MaNhanVien">
+        @foreach (var item in Model)
+        {
+            <option value="@item.MaNhanVien">@item.TenNhanVien</option>
+        }
+    </select></br>
+<div class="dscttb"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#MaNhanVien").change(function(){
+           var MaNhanVien = $(this).val();
+           $.ajax({
+                url: "/NV_BT/LietKeChiTietThietBiNhanVienDaSua",
+                method:"post",
+                data: { MaNhanVien: MaNhanVien },
+                success:function(data){
+                    $(".dscttb").html(data)
+                }
+           })
+        })
+    })
+</script>

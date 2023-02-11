@@ -1,0 +1,26 @@
+﻿@*<form action="/NhanVien/CacNhanVienCoNLanSua" method="post">
+    <label>So lan sua</label>
+    <input type="text" name="num"></input></br>
+    <input type="submit" name="submit" value="Liet Ke"></input>
+</form>*@
+
+<label>So lan sua</label>
+<input id="num" type="text" name="num"></input></br>
+<button class="btn_LietKe">Liệt Kê</button>
+<div class="dsnv"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn_LietKe").click(function(){
+           var number = $("#num").val();
+           $.ajax({
+                url: "/NhanVien/CacNhanVienCoNLanSua",
+                method:"post",
+                data:{number:number},
+                success:function(data){
+                    $(".dsnv").html(data)
+                }
+           })
+        })
+    })
+</script>

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<QuanLyCaSi_XLAJAX.Models.CaSi>
+@{
+    ViewData["Title"] = "Liet Ke Ca Si";
+}
+
+<h2>Danh dach cac ca si</h2>
+<table border="1">
+    <tr>
+        <th>Ma Ca Si</th>
+        <th>Ten Ca Si</th>
+        <th>Ngay Sinh</th>
+        <th>Chuc Nang</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>
+                @item.MaCaSi
+            </td>
+            <td>
+                @item.TenCaSi
+            </td>
+            <td>
+                @item.Ngaysinh
+            </td>
+            <td>
+                <a href="XoaCaSi?Id=@item.MaCaSi">Xoa</a>
+                <a href="ViewCaSi?Id=@item.MaCaSi">View</a>
+            </td>
+        </tr>
+    }
+</table>

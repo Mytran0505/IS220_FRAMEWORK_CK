@@ -1,0 +1,39 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using QuanLyCaSi_XLAJAX.Models;
+namespace QuanLyCaSi_XLAJAX.Controllers
+{
+    public class AlbumController : Controller
+    {
+        public IActionResult EnterAlbum()
+        {
+            StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi_XLAJAX.Models.StoreContext)) as StoreContext;
+            return View(context.GetCaSis());
+        }
+        public IActionResult InsertAlbum(Album al)
+        {
+            StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi_XLAJAX.Models.StoreContext)) as StoreContext;
+            int count = context.InsertAlbum(al);
+            if (count > 0)
+                ViewData["thongbao"] = "Insert Album thanh cong";
+            else
+                ViewData["thongbao"] = "Insert Album khong thanh cong";
+            return View();
+        }
+        public IActionResult AlbumCoNhieuBaiHatNhat() {
+            StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi_XLAJAX.Models.StoreContext)) as StoreContext;
+            return View(context.AlbumCoNhieuBaiHatNhat());  
+        }
+
+        public IActionResult LietKeAlbum()
+        {
+            StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi_XLAJAX.Models.StoreContext)) as StoreContext;
+            return View(context.LietKeAlbum());
+        }
+
+        public IActionResult SoLuongBaiHatTrongMoiAlbum()
+        {
+            StoreContext context = HttpContext.RequestServices.GetService(typeof(QuanLyCaSi_XLAJAX.Models.StoreContext)) as StoreContext;
+            return View(context.SoLuongBaiHatTrongMoiAlbum());
+        }
+    }
+}

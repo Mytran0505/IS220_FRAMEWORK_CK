@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QuanLyCaSi_XLAJAX
+build_property.RootNamespace = QuanLyCaSi_XLAJAX
+build_property.ProjectDir = D:\IS220_FRAMEWORK_CK\QuanLyCaSi_XLAJAX\QuanLyCaSi_XLAJAX\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\IS220_FRAMEWORK_CK\QuanLyCaSi_XLAJAX\QuanLyCaSi_XLAJAX
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Album/AlbumCoNhieuBaiHatNhat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cQWxidW1Db05oaWV1QmFpSGF0TmhhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Album/EnterAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cRW50ZXJBbGJ1bS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Album/InsertAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cSW5zZXJ0QWxidW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Album/LietKeAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cTGlldEtlQWxidW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Album/SoLuongBaiHatTrongMoiAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cU29MdW9uZ0JhaUhhdFRyb25nTW9pQWxidW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/BaiHat/DeleteBaiHat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XERlbGV0ZUJhaUhhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/BaiHat/LietKeBaiHat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XExpZXRLZUJhaUhhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/BaiHat/LietKeCacBaiHat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XExpZXRLZUNhY0JhaUhhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/BaiHat/LietKeCacBaiHatCoTrongAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XExpZXRLZUNhY0JhaUhhdENvVHJvbmdBbGJ1bS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/BaiHat/LietKeNBaiHat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XExpZXRLZU5CYWlIYXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/BaiHat/TimBaiHat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XFRpbUJhaUhhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/BaiHat/TimBaiHatTheoTen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpSGF0XFRpbUJhaUhhdFRoZW9UZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/CaSi/EnterCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxFbnRlckNhU2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/CaSi/InsertCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxJbnNlcnRDYVNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/CaSi/LietKeCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxMaWV0S2VDYVNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/CaSi/UpdateCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxVcGRhdGVDYVNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/CaSi/ViewCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxWaWV3Q2FTaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/CaSi/XoaCaSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FTaVxYb2FDYVNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-r1ouj1a32c
+
+[D:/IS220_FRAMEWORK_CK/QuanLyCaSi_XLAJAX/QuanLyCaSi_XLAJAX/Views/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-orw41o6lmo

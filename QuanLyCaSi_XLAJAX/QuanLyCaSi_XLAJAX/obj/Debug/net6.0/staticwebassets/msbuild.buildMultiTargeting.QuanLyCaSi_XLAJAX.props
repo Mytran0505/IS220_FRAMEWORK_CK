@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\QuanLyCaSi_XLAJAX.props" />
+</Project>

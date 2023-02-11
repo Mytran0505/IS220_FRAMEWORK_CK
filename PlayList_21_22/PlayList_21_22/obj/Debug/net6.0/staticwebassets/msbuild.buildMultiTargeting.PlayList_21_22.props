@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PlayList_21_22.props" />
+</Project>

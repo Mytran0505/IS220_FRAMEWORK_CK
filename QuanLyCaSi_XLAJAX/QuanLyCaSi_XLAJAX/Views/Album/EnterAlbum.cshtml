@@ -1,0 +1,21 @@
+﻿@model IEnumerable<QuanLyCaSi_XLAJAX.Models.CaSi>
+
+@{
+    ViewData["Title"] = "Insert Album";
+}
+
+
+<h2>Insert Album</h2>
+<form action="/Album/InsertAlbum" method="post">
+    <label>Tên Ca Si</label>
+    <select name="MaCaSi">
+        @foreach(var item in Model){
+            <option value ="@item.MaCaSi">@item.TenCaSi</option>
+        }
+    </select> </br>
+    <label>Ma Album</label>
+    <input type="text" name="MaAlbum"></input></br>
+    <label>Ten Album</label>
+    <input type="text" name="TenAlbum"></input></br>
+    <input type="submit" name="submit"></input>
+</form>
