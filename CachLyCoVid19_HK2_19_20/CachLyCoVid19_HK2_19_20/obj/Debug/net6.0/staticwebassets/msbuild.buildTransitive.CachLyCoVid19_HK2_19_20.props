@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CachLyCoVid19_HK2_19_20.props" />
+</Project>

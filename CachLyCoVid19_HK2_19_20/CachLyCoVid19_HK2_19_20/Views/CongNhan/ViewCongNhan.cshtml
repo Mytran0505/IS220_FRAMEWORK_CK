@@ -1,0 +1,19 @@
+﻿@model CongNhan
+
+<label>Mã công nhân</label>
+<input type="text" value="@Model.MaCongNhan"></input></br>
+<label>Tên công nhân</label>
+<input type="text" value="@Model.TenCongNhan"></input></br>
+<label>Giới tính</label>
+@if (Model.GioiTinh)
+{
+    <input type="checkbox" checked></input>
+}
+else
+{
+    <input type="checkbox"></input>
+}</br>
+<label>Năm Sinh</label>
+<input type="text" value="@Model.NamSinh"></input></br>
+<label>Nước về</label>
+<input type="text" value="@Model.NuocVe"></input></br>

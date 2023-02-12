@@ -1,0 +1,11 @@
+﻿@model IEnumerable<CachLyCoVid19_HK2_19_20.Models.DiemCachLy>
+<form action="/CongNhan/LietKeCongNhanTrongDiemCachLy" method="post">
+    <label>Tên điểm cách ly</label>
+    <select name="MaDiemCachLy">
+        @foreach(var item in Model)
+        {
+            <option value="@item.MaDiemCachLy">@item.TenDiemCachLy</option>
+        }
+    </select></br>
+    <input type="submit" name="Liệt kê"></input>
+</form>

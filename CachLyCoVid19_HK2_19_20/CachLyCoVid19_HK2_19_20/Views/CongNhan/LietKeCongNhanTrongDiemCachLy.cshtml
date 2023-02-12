@@ -1,0 +1,19 @@
+﻿@model IEnumerable<CachLyCoVid19_HK2_19_20.Models.CongNhan>
+<table border="1">
+    <tr>
+        <td>Mã công nhân</td>
+        <td>Tên công nhân</td>
+        <td>Chức nănng</td>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <th>@item.MaCongNhan</th>
+                <th>@item.TenCongNhan</th>
+                <th>
+                    <a href="XoaCongNhan?MaCongNhan=@item.MaCongNhan">Delete</a>
+                    <a href="ViewCongNhan?MaCongNhan=@item.MaCongNhan">View</a>
+                </th>
+            </tr>
+        }
+    </tr>
+</table>
