@@ -1,0 +1,17 @@
+﻿@{
+    Layout = null;
+}
+@model List<PlayList_HK1_2122.Models.CaSi>
+<h2>Danh sách ca sĩ</h2>
+<table border="1">
+    <tr>
+        <th>STT</th>
+        <th>Tên Ca Sĩ</th>
+    </tr>
+    @for (int i = 1; i <= Model.Count(); i++) {
+        <tr>
+            <td>@i</td>
+            <td>@Model[i-1].TenCaSi</td>
+        </tr>
+    }
+</table>

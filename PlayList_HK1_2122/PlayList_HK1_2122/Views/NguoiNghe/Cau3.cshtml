@@ -1,0 +1,25 @@
+﻿@model IEnumerable<PlayList_HK1_2122.Models.NguoiNghe>
+<label>Tên Người Nghe</label>
+<select id="TenNN" name="MaNN">
+    @foreach(var item in Model)
+    {
+        <option value="@item.MaNN">@item.TenNN</option>
+    }
+</select>
+<div class="dspl"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#TenNN").change(function(){
+            var maNN = $(this).val();
+            $.ajax({
+                url:"/PlayList/LietKePLCuaNguoiNghe",
+                method:"post",
+                data:{MaNN:maNN},
+                success:function(data){
+                    $(".dspl").html(data)
+                }
+            })
+        })
+    })
+</script>

@@ -1,0 +1,15 @@
+﻿@model List<object>
+
+<table border="1">
+    <tr>
+        <th>Tên Bài Hát</th>
+        <th>Tên Ca Sĩ</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.GetType().GetProperty("TenBaiHat").GetValue(item, null)</td>
+            <td>@item.GetType().GetProperty("TenCaSi").GetValue(item, null)</td>
+        </tr>
+    }
+</table>

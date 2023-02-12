@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+@model List<PlayList_HK1_2122.Models.PlayList>
+
+    <table border="1">
+        <tr>
+            <th>STT</th>
+            <th>Tên PlayList</th>
+            <th>Chức Năng</th>
+        </tr>
+        @for (int i = 1; i <= Model.Count(); i++) {
+            <tr>
+                <td>@i</td>
+                <td>
+                <a href="/PlayList/ViewThongTinPlayList?MaPlayList=@Model[i-1].MaPlayList">@Model[i-1].TenPlayList</a>
+                </td>
+                <td>
+                    <a href="/PlayList/XoaPLayPlist?MaPlayList=@Model[i-1].MaPlayList">Xóa</a>
+                </td>
+            </tr>
+        }
+    </table>
