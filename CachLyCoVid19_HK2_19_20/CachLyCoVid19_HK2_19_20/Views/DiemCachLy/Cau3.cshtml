@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<CachLyCoVid19_HK2_19_20.Models.DiemCachLy>
-<form action="/CongNhan/LietKeCongNhanTrongDiemCachLy" method="post">
+@*<form action="/CongNhan/LietKeCongNhanTrongDiemCachLy" method="post">
     <label>Tên điểm cách ly</label>
     <select name="MaDiemCachLy">
         @foreach(var item in Model)
@@ -8,4 +8,29 @@
         }
     </select></br>
     <input type="submit" name="Liệt kê"></input>
-</form>
+</form>*@
+
+<label>Tên điểm cách ly</label>
+<select id="MaDiemCachLy" name="MaDiemCachLy">
+    @foreach (var item in Model)
+    {
+        <option value="@item.MaDiemCachLy">@item.TenDiemCachLy</option>
+    }
+</select></br>
+<div class="dscn"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#MaDiemCachLy").change(function (){
+            var MaDiemCachLy = $(this).val();
+            $.ajax({
+                url: "/CongNhan/LietKeCongNhanTrongDiemCachLy",
+                method:"post",
+                data:{MaDiemCachLy:MaDiemCachLy},
+                success:function(data){
+                    $(".dscn").html(data)
+                }
+            })
+        })
+    })
+</script>

@@ -32,5 +32,11 @@ namespace CachLyCoVid19_HK2_19_20.Controllers
             ViewData.Model = context.ViewCongNhan(MaCongNhan);
             return View();
         }
+        public IActionResult UpdateCongNhan(CongNhan cn, string MaCNOld)
+        {
+            StoreContext context = HttpContext.RequestServices.GetService(typeof(CachLyCoVid19_HK2_19_20.Models.StoreContext)) as StoreContext;
+            context.UpdateCongNhan(cn, MaCNOld);
+            return RedirectToAction("ViewCongNhan","CongNhan", new{cn.MaCongNhan });
+        }
     }
 }

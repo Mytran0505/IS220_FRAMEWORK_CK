@@ -1,19 +1,22 @@
 ﻿@model CongNhan
-
-<label>Mã công nhân</label>
-<input type="text" value="@Model.MaCongNhan"></input></br>
-<label>Tên công nhân</label>
-<input type="text" value="@Model.TenCongNhan"></input></br>
-<label>Giới tính</label>
-@if (Model.GioiTinh)
-{
-    <input type="checkbox" checked></input>
-}
-else
-{
-    <input type="checkbox"></input>
-}</br>
-<label>Năm Sinh</label>
-<input type="text" value="@Model.NamSinh"></input></br>
-<label>Nước về</label>
-<input type="text" value="@Model.NuocVe"></input></br>
+<form action="UpdateCongNhan">
+    <input type="hidden" name="MaCNOld" value="@Model.MaCongNhan"></input>
+    <label>Mã công nhân</label>
+    <input type="text" name="MaCongNhan" value="@Model.MaCongNhan"></input></br>
+    <label>Tên công nhân</label>
+    <input type="text" name="TenCongNhan"value="@Model.TenCongNhan"></input></br>
+    <label>Giới tính</label>
+    @if (Model.GioiTinh)
+    {
+        <input type="checkbox" name ="GioiTinh" value="@Model.GioiTinh" checked></input>
+    }
+    else
+    {
+        <input type="checkbox" name="GioiTinh" value="@Model.GioiTinh"></input>
+    }</br>
+    <label>Năm Sinh</label>
+    <input type="text" name="NamSinh" value="@Model.NamSinh"></input></br>
+    <label>Nước về</label>
+    <input type="text" name="NuocVe"value="@Model.NuocVe"></input></br>
+    <input type="submit" name="Submit" value="Update"></input>
+</form>

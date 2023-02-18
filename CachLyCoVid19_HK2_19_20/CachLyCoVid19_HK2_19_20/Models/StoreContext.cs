@@ -126,7 +126,9 @@ namespace CachLyCoVid19_HK2_19_20.Models
             using (MySqlConnection connection = GetConnection())
             {
                 connection.Open();
-                var str = "delete from CongNhan " +
+                var str = "delete from CN_TC " +
+                    "where MaCongNhan = @MaCN; " +
+                    "delete from CongNhan " +
                     "where MaCongNhan = @MaCN ";
                 MySqlCommand cmd = new MySqlCommand(str, connection);
                 cmd.Parameters.AddWithValue("MaCN", MaCongNhan);
@@ -156,6 +158,23 @@ namespace CachLyCoVid19_HK2_19_20.Models
                 connection.Close();
             }
             return cn;
+        }
+        public void UpdateCongNhan(CongNhan cn, string MaCNOld)
+        {
+            using (MySqlConnection connection = GetConnection())
+            {
+                connection.Open();
+                var str = "update CongNhan set MaCongNhan = @MaCN, TenCongNhan = @TenCN, GioiTinh =@GT, NamSinh=@NS, NuocVe=@NV " +
+                    "where MaCongNhan = @MaCNOld";
+                MySqlCommand cmd = new MySqlCommand(str, connection);
+                cmd.Parameters.AddWithValue("MaCN", cn.MaCongNhan);
+                cmd.Parameters.AddWithValue("TenCN", cn.TenCongNhan);
+                cmd.Parameters.AddWithValue("GT", cn.GioiTinh);
+                cmd.Parameters.AddWithValue("NS", cn.NamSinh);
+                cmd.Parameters.AddWithValue("NV", cn.NuocVe);
+                cmd.Parameters.AddWithValue("MaCNOld", MaCNOld);
+                cmd.ExecuteNonQuery();
+            }
         }
     }
 }

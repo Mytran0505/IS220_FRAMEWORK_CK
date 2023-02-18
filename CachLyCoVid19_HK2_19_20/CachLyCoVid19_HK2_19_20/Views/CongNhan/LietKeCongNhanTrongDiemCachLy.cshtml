@@ -1,19 +1,59 @@
-﻿@model IEnumerable<CachLyCoVid19_HK2_19_20.Models.CongNhan>
+﻿@*@model IEnumerable<CachLyCoVid19_HK2_19_20.Models.CongNhan>
 <table border="1">
     <tr>
         <td>Mã công nhân</td>
         <td>Tên công nhân</td>
         <td>Chức nănng</td>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <th>@item.MaCongNhan</th>
+            <th>@item.TenCongNhan</th>
+            <th>
+                <a href="XoaCongNhan?MaCongNhan=@item.MaCongNhan">Delete</a>
+                <a href="ViewCongNhan?MaCongNhan=@item.MaCongNhan">View</a>
+            </th>
+        </tr>
+        }
+    </tr>
+</table>*@
+@{
+    Layout = null;
+}
+@model IEnumerable<CachLyCoVid19_HK2_19_20.Models.CongNhan>
+<table border="1">
+    <tr>
+        <th>Mã công nhân</th>
+        <th>Tên công nhân</th>
+        <th>Chức nănng</th>
+    </tr>
         @foreach(var item in Model)
         {
             <tr>
-                <th>@item.MaCongNhan</th>
-                <th>@item.TenCongNhan</th>
-                <th>
-                    <a href="XoaCongNhan?MaCongNhan=@item.MaCongNhan">Delete</a>
-                    <a href="ViewCongNhan?MaCongNhan=@item.MaCongNhan">View</a>
-                </th>
+                <td>@item.MaCongNhan</td>
+                <td>@item.TenCongNhan</td>
+                <td>
+                    <a href="javascript:void(0)" class="btn_delete">Delete</a>
+                    <a href="/CongNhan/ViewCongNhan?MaCongNhan=@item.MaCongNhan">View</a>
+                    <input type="hidden" class="MaCongNhan" value="@item.MaCongNhan"></input>
+                </td>
             </tr>
         }
-    </tr>
 </table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn_delete").click(function(){
+            var parent = $(this).parents('tr');
+            var MaCongNhan = $(this).parent().find(".MaCongNhan").val();
+            $.ajax({
+                url:"/CongNhan/XoaCongNhan",
+                method:"post",
+                data:{MaCongNhan:MaCongNhan},
+                success: function(data){
+                    parent.remove();
+                }
+            });
+        });
+    });
+</script>
